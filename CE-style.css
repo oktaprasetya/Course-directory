@@ -1,0 +1,81 @@
+.course-encyclopedia-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.course-encyclopedia-card {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+@media screen and (max-width:500px){
+    .course-encyclopedia-card {width: 45%; margin: 5px; padding: 0px;}
+}   
+.course-encyclopedia-card:hover {
+    transform: scale(1.05);
+}
+.course-encyclopedia-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media screen and (max-width:500px){
+    .course-encyclopedia-card img {width: 120px; height: 120px; object-fit: cover;}
+}  
+.course-encyclopedia-card p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+@media screen and (max-width:450px){
+    .course-encyclopedia-card p {font-size: 12px; font-weight: bold; line-height: 100%;}
+}  
+.course-encyclopedia-card a {text-decoration: none;}
+.course-encyclopedia-pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.course-encyclopedia-pagination-container button {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.course-encyclopedia-pagination-container button.active {
+    background-color: #0056b3;
+}    
+.course-encyclopedia-search-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.course-encyclopedia-search-container input[type="text"] {
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+.course-encyclopedia-search-container button {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+@media screen and (max-width:450px){
+    .course-encyclopedia-search-container button {padding: 8px 20px; margin-left: 0px; width: 20%;}
+}
